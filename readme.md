@@ -32,13 +32,26 @@ The task
 * You have a file named 'text_to_spell'.
 * You have a file named 'dictionary'.
 * Create a shell script, which will take the file to spell, and by using the dictionary, print to the standard output words that contain mistakes.
+
 Use pipeline to solve the problem.
+
 The shell script has to be uploaded to the github repository, in a directory with your name.
+
 We'll check your script by running it like:
 
+```
 $ ./yourscript text_to_spell
+```
 
 and we expect certain mistaken words to be written to stdout.
+
+```
+$ ./spellcheck.sh text_to_spell 
+compined
+laborotories
+privide
+$
+```
 
 Programs you might want to use
 ========================

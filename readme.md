@@ -30,7 +30,7 @@ The task
 * You have a file named 'text_to_spell'.
 * You have a file named 'dictionary'.
 * Create a shell script, which will take the file to spell, and by using the dictionary, print to the standard output words that contain mistakes.
-
+Use pipeline to solve the problem.
 The shell script has to be uploaded to the github repository, in a directory with your name.
 We'll check your script by running it like:
 
@@ -47,7 +47,7 @@ Refer to the program manual pages via 'man' command or note the links below, if 
 * tr (https://unix.stackexchange.com/questions/171603/convert-file-contents-to-lower-case#171604)
 * sort
 * uniq
-
+* sed
 
 
 

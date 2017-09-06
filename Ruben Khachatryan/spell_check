@@ -1,0 +1,7 @@
+#!/bin/bash
+cat $1  | fmt -1 | tr '[:upper:]' '[:lower:]' | uniq | sed -e 's/\.//g' | sort | comm - ./dictionary -2 -3
+
+
+
+
+

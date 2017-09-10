@@ -1,0 +1,1 @@
+tr '[:upper:]' '[:lower:]' < $1 | fmt -1 | sort | sed "s/\./ /g" | uniq | comm -23 - dictionary

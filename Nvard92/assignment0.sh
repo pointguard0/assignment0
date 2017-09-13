@@ -1,32 +1,10 @@
-set -x
-
-function print(){
-echo $1
-}
-
-
-function checkArgs(){
-
-if [ ! -n "$1" ]
-then 
-      print "The file to be checked is missing"
-      exit
-else 
-  if [ ! -n "$2" ]
-  then 
-    print "The dictionary is not given"
-    exit
-  fi
-fi
-}
 
 function spell()
 {
 
-fmt -1 $1|sort|tr A-Z a-z| comm -13  $2  -
+fmt -1 $1|tr A-Z a-z| sed -e 's|^[[:punct:]]*||; s|[[:punct:]]*$||' - | sort - | comm -23  - ../dictionary
 
 }
 
-checkArgs
 spell $1
 

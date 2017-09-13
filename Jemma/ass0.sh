@@ -1,0 +1,1 @@
+sed 's/ /\n/g' <<< $(cat $1) | sort | tr '[:upper:]' '[:lower:]' | uniq | tr -d '.' | comm - ./dictionary -2 -3

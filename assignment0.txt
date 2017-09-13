@@ -1,0 +1,1 @@
+cat $1 |fmt -1 |  tr '[:upper:]' '[:lower:]' |sed -e 's/\.//g'| sed -e 's/?//g'| sed -e 's/!//g' | sed -e 's/,//g' | uniq | sort| comm  -23  dictionary	-

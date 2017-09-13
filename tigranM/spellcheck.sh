@@ -1,1 +1,1 @@
-comm -23 <(cat $1  | tr [:punct:] ' ' | tr A-Z a-z | fmt -1 | sort | uniq) <(sort <dictionary | uniq)
+comm -23 <(cat $1  | tr [:punct:] ' ' | tr A-Z a-z | fmt -1 | tr -d " \t" | sort | uniq) <(sort <dictionary | uniq)

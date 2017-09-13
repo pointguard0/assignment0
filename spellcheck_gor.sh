@@ -1,0 +1,1 @@
+cat $1 | fmt -1 | tr [:lower:] [:upper:] | sort | sed "s/\./ /g" | uniq | comm -23 - dictionary
